@@ -1,0 +1,114 @@
+/* ------------------------------
+   FUNDO EM DEGRADÊ
+--------------------------------*/
+.gradient-bg {
+  background: linear-gradient(135deg, #0A2A6F, #2F66F5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ------------------------------
+   FORMAS DIAGONAIS
+--------------------------------*/
+.diagonal {
+  position: absolute;
+  width: 180%;
+  height: 180px;
+  left: -40%;
+  background: rgba(255, 255, 255, 0.08);
+  transform: rotate(-12deg);
+}
+
+.diagonal-1 { top: 10%; }
+.diagonal-2 { top: 55%; }
+
+/* ------------------------------
+   CARD MODERNO
+--------------------------------*/
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: linear-gradient(180deg, #ffffff, #f6f6f6);
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+/* ------------------------------
+   LOGO FIAP NO CÍRCULO
+--------------------------------*/
+.logo-circle {
+  width: 70px;
+  height: 70px;
+  background-color: #003399;
+  border-radius: 50%;
+}
+
+.logo-fiap {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* ------------------------------
+   FRASE AO LADO (SÓ EM DESKTOP)
+--------------------------------*/
+.slogan-container {
+  display: none; /* Esconde por padrão em mobile */
+}
+
+/* Mostra apenas a partir de telas médias/grandes */
+@media (min-width: 768px) {
+    .slogan-container {
+        display: block;
+        position: absolute;
+        left: 100%;              /* joga a frase para o lado direito do card */
+        top: 50%;                /* alinha na altura do meio do card */
+        transform: translateY(-50%);
+        margin-left: 50px;       /* distância de ~3 cm */
+        width: 250px; /* Ajuda a controlar o texto */
+    }
+    .slogan {
+        font-size: 26px;         
+        color: white;
+        opacity: 0.30;           
+        font-weight: 300;        
+        white-space: nowrap;     
+    }
+}
+
+
+/* --------------------------------
+   INPUTS E LABELS
+---------------------------------*/
+.form-label { font-weight: 600; }
+
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+}
+
+/* --------------------------------
+   LINKS
+---------------------------------*/
+.login-card a {
+  text-decoration: none;
+  color: #1e3a8a;
+}
+
+.login-card a:hover { text-decoration: underline; }
+
+/* --------------------------------
+   BOTÃO
+---------------------------------*/
+.btn-primary {
+  background-color: #2F66F5;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.btn-primary:hover { background-color: #1f4ed6; }
